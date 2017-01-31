@@ -20,6 +20,7 @@ class App extends React.Component {
       <div>
         <h1>Search a Stock</h1>
         <SearchBar stockInfo={this.stockInfo} />
+        <DisplayStocks stockCollection={this.state.stockTickers} />
       </div>
 
     )
