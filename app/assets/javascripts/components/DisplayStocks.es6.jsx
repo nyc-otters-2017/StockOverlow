@@ -3,8 +3,9 @@ class DisplayStocks extends React.Component {
     return(
       <div>
         {
+          // console.log("stockCollection man", this.props.stockCollection)
           this.props.stockCollection.map((ticker) => {
-            return <Stock {ticker.quote} />
+            return <Stock quote={ticker.quote} />
           })
         }
       </div>
