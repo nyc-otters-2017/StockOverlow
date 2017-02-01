@@ -10,6 +10,7 @@ class Position extends React.Component {
         <p>Ticker: {ticker}</p>
         <p>Shares: {shares}</p>
         <p>Buy Price: {buy_price}</p>
+        <p>Cost Basis: {shares * buy_price}</p>
       </div>
     )
   }

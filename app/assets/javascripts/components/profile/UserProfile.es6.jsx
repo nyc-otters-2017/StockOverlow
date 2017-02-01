@@ -8,20 +8,22 @@ class UserProfile extends React.Component {
   }
 
   componentDidMount(){
-    console.log(this.state)
+    console.log(this.state.positions)
+    console.log(this.props)
   }
 
   render() {
     return (
       <section className="user-profile">
-        <h1>User-Full_name</h1>
+        <h1>{this.props.fullname}</h1>
 
         <ul className="positions-list">
           {
             this.state.positions.map(position=>{
               return (
                 <li key={position.id}>
-                  <Position data={position} />
+                  <Position data={position}
+                   />
                 </li>
               )
             })
